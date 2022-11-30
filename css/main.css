@@ -1,0 +1,560 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 1180px;
+    margin: auto;
+}
+
+img { width: 200px }
+/* END */
+
+/* Navigation */
+nav .navigation {
+    background-color: #075DB2;
+}
+
+nav .navigation ul {
+    padding: 25px 0;
+    text-align: right;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav .navigation ul li a {
+    color: #fff;
+    font-size: .83em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 25px 15px;
+}
+
+nav .navigation .menu-bar{
+    display: none;
+}
+/* END */
+
+/* Header */
+header .header {
+    background: url('../images/header-bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh; 
+    color: #fff;
+}
+
+header .header .section-wrapper {
+    position: relative;
+    top: 8vh;
+    bottom: 8vh;
+    display: flex;
+}
+
+header .header .section-wrapper .section h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    padding: 5px 0 10px 0;
+    width: 100%;
+}
+
+header .header .section-wrapper .section h3 {
+    letter-spacing: 1.15px;
+}
+
+header .header .section-wrapper .section p {
+    width: 100%;
+    font-size: 1.1em;
+    letter-spacing: 1.3px;
+    line-height: 1.8;
+}
+
+header .header .section-wrapper .section h3, h1 {
+    text-transform: uppercase;
+}
+
+header .header .section-wrapper .section h3, p {
+    font-family: Open Sans;
+    font-weight: 300;
+}
+
+header .header .section-wrapper .section .btn {margin: 30px 0;}
+header .header .section-wrapper .section .btn a {margin: 0 20px 0 0}
+
+header .header .section-wrapper .section #header-img {
+    padding: 20px 0;
+    width: 545px;
+}
+/* END */
+
+.bg-wrapper {
+    background: url('../images/section-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Section - About */
+section .about-section .about-section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 0;
+}
+
+section .about-section .about-section-wrapper h3 {
+    font-size: 1.6em;
+    padding: 20px 0;
+    color: #075DB2;
+    font-family: 'Architects Daughter', cursive;
+}
+
+section .about-section .about-section-wrapper p {
+    padding: 0 80px;
+    letter-spacing: 0.9px;
+    line-height: 1.8;
+}
+
+section .about-section .about-section-wrapper img {
+    width: 60px;
+}
+/* END */ 
+
+/* Feature Section */
+section .feat-section {
+    text-align: center;
+}
+
+section .feat-section .feat-section-wrapper {
+    padding: 0 0 100px 0;
+}
+
+section .feat-section .feat-section-wrapper h1 {
+    font-size: 2em;
+    padding: 15px 0;
+    font-family: 'Architects Daughter', cursive;
+}
+
+section .feat-section .feat-section-wrapper h4 {
+    font-family: 'Architects Daughter', cursive;
+    color: #555;
+    font-weight: 300;
+}
+
+section .feat-section .feat-section-wrapper .feat-screens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .feat-section .feat-section-wrapper .feat-screens img {
+    width: 220px;
+    position: relative;
+    top: 40px;
+    margin: 0 10px;
+}
+
+/* Testimonials Section */
+section .test-section {
+    background: url('../images/header-bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+section .test-section .test-section-wrapper {
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+
+section .test-section .test-section-wrapper h1 {
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Architects Daughter', cursive;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+section .test-section .test-section-wrapper .boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    text-align: left;
+}
+
+section .test-section .test-section-wrapper .boxes .box {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+section .test-section .test-section-wrapper .boxes .box img {
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+section .test-section .test-section-wrapper .boxes .box h4 {
+    position: relative;
+    top: -50px;
+    margin-left: 90px;
+    font-size: 1.1em;
+    font-family: Arial;
+    color: #444;
+}
+
+section .test-section .test-section-wrapper .boxes .box p {
+    display: block;
+    font-size: 1.2em;
+    margin-top: -10px;
+    font-family: 'Architects Daughter', cursive;
+    color: #777;
+}
+
+section .test-section .test-section-wrapper a {
+    background: #075DB2;
+    text-decoration: none;
+    color: #ddd;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    font-size: .7em;
+    padding: 15px 30px;
+    position: relative;
+    top: 70px;
+    transition: ease-in-out .2s;
+}
+
+section .test-section .test-section-wrapper a:hover {
+    background: rgb(252, 252, 252, 0.9);
+    color: #075DB2;
+    -webkit-box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.75);
+
+}
+
+/* Section = Our Pricing */
+section .pricing-section {
+    background: url('../images/section-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section .pricing-section .pricing-section-wrapper {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+section .pricing-section .pricing-section-wrapper .header {
+    text-align: center;
+}
+
+section .pricing-section .pricing-section-wrapper .header h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2em;
+}
+
+section .pricing-section .pricing-section-wrapper .header h4 {
+    font-family: 'Architects Daughter', cursive;
+    color: #555;
+    font-weight: 300;
+}
+
+section .pricing-section .pricing-section-wrapper .boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+section .pricing-section .pricing-section-wrapper .boxes .box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 50px 0 80px 0;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 23px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px -15px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 23px -15px rgba(0,0,0,0.75);
+}
+
+section .pricing-section .pricing-section-wrapper .boxes .box h1 {
+    padding: 0 0 30px 0;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+section .pricing-section .pricing-section-wrapper .boxes .box h5 {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+    font-family: Arial;
+    padding: 10px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+section .pricing-section .pricing-section-wrapper .boxes .box ul li{
+    list-style: none;
+    padding: 3px 70px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #888;
+}
+
+section .pricing-section .pricing-section-wrapper .boxes .box a {
+    background: rgba(7, 93, 178, 0.7);
+    text-decoration: none;
+    color: #ddd;
+    padding: 7px 50px;
+    border-radius: 3px;
+    position: relative;
+    top: 50px;
+    transition: ease-in-out .2s;
+}
+
+section .pricing-section .pricing-section-wrapper .boxes .box a:hover{
+    background: #075DB2;
+    -webkit-box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.75);
+}
+
+
+/* Footer */
+section .footer-section {
+    background: url('../images/header-bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+section .footer-section .footer-section-wrapper {
+    padding: 100px 0;
+}
+
+section .footer-section .footer-section-wrapper .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 90px;
+}
+
+section .footer-section .footer-section-wrapper .icons .far, .fal {
+    font-size: 3.7em;
+}
+
+section .footer-section .footer-section-wrapper .icons .icon div {
+    margin: 0 10px;
+}
+
+section .footer-section .footer-section-wrapper .icons label {
+    font-family: Arial;
+    font-size: 1.8em;
+}
+
+section .footer-section .footer-section-wrapper .icons p {
+    font-size: 0.8em;
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-family: Arial;
+}
+
+section .footer-section .footer-section-wrapper .icons .icon {
+    text-align: left;
+    display: flex;
+}
+/* ========================================================== */
+
+/* Mobile View - Media Queries */
+@media only screen and (max-width: 600px) {
+    /* Global */ 
+    section .about-section .about-section-wrapper,
+    section .feat-section .feat-section-wrapper .feat-screens,
+    section .test-section .test-section-wrapper .boxes,
+    section .pricing-section .pricing-section-wrapper .boxes {
+      display: block;
+    }
+    /* Navigation */
+    nav .navigation ul li a {
+        display: none;
+    }
+    /* Header */
+    header .section-wrapper .section #header-img {display: none}
+    header .header {padding: 40px 25px}
+    header .header .section-wrapper {top: 2.5vh;}
+    header .header .section-wrapper .section {
+        text-align: center;
+        position: relative;
+    }
+    header .header .section-wrapper .section h3{
+        font-size: 0.9em;
+        padding: 10px 0;
+    }
+    header .header .section-wrapper .section h1 {
+        font-size: 2.7em;
+    }
+    header .header .section-wrapper .section p {
+        font-size: 0.9em;
+    }
+    header .header .section-wrapper .section .btn a {margin: 0}
+    header .header .section-wrapper .section .btn img {margin: 0 0 10px 0}
+
+    /* About */
+    section .about-section .about-section-wrapper {padding: 40px 0;}
+    section .about-section .about-section-wrapper .box {
+        margin: 50px 0;
+    }
+    
+    /* Screenshots */
+    section .feat-section .feat-section-wrapper .feat-screens img {
+        width: 50%;
+        top: 40px;
+        left: 0;
+        right: 6%;
+        margin: 10px 0
+    }
+
+    /* Testimonials */ 
+    section .test-section .test-section-wrapper h1 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    section .test-section .test-section-wrapper .boxes .box {
+        margin: 30px 20px;
+    }
+
+    /* Pricing */
+    section .pricing-section .pricing-section-wrapper .boxes {
+        padding: 0;
+    }
+    section .pricing-section .pricing-section-wrapper .boxes .box {
+        margin: 40px 30px;
+    }
+
+    /* Footer */
+    section .footer-section .footer-section-wrapper {
+        padding: 50px 0;
+    }
+
+    section .footer-section .footer-section-wrapper .icons {
+        font-size: 10px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3em;
+    }
+  }
+/* ========================================================== */
+
+/* Tablet View - Media Queries */
+@media only screen and (min-width: 601px) and (max-width: 1366px){
+    
+
+    /* Navigation */
+    nav .navigation ul {text-align: center;}
+
+    /* Header */
+    header .header .section-wrapper {
+        margin: 0 70px;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    header .header .section-wrapper .section h3{
+        font-size: 1.2em;
+        margin: 0 10px;
+    }
+
+    header .header .section-wrapper .section h1{
+        font-size: 3.5em;
+    }
+
+    header .header .section-wrapper .section p{
+        font-size: 1.2em;
+    }
+
+    header .header .section-wrapper .section .btn a {
+        margin: 10px;
+    }
+
+    header .header .section-wrapper .section #header-img {display: none;}
+
+    /* About Section */
+    section .about-section .about-section-wrapper {
+        grid-gap: 0;
+    }
+
+    /* Testimonials */ 
+    section .test-section .test-section-wrapper .boxes {
+        margin: 0 30px;
+    }
+
+    /* Screenshots section */
+    section .feat-section .feat-section-wrapper .feat-screens {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 100px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    section .feat-section .feat-section-wrapper .feat-screens img {
+        margin: 0;
+        position: relative;
+    }
+
+    section .feat-section .feat-section-wrapper .feat-screens #first-row {justify-self: end}
+
+    /* Price section */
+    section .pricing-section .pricing-section-wrapper {
+        padding: 0 100px;
+    }
+
+    section .pricing-section .pricing-section-wrapper .header {
+        padding-top: 50px;
+    }
+
+    section .pricing-section .pricing-section-wrapper .boxes{
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    section .pricing-section .pricing-section-wrapper .boxes .box{
+        margin-bottom: 30px;
+    }
+
+    /* Footer Section */
+    section .footer-section .footer-section-wrapper {
+        padding: 50px 16px;
+    }
+    
+    section .footer-section .footer-section-wrapper .icons {
+        font-size: 12px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3em;
+    }
+}
